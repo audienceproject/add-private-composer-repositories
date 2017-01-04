@@ -1,5 +1,5 @@
 name: add-private-composer-repositories
-version: 1.0.0
+version: 1.0.1
 description: A wercker step that configures Composer to load the private AudienceReport PHP repositories.
 keywords:
   - php
