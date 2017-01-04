@@ -1,5 +1,4 @@
 #!/bin/bash
-mkdir $COMPOSER_HOME
 echo '{
 	"repositories": [{
 		"type": "vcs",

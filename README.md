@@ -16,7 +16,7 @@ steps:
         hostname: bitbucket.org
         fingerprint: 97:8c:1b:f2:6f:14:6b:5c:3b:ec:aa:46:46:74:7c:40
         type: rsa
-    - audienceproject/add-private-composer-repositories
+    - audienceproject/add-private-composer-repositories@1.0.1
 ```
 
 Note : If you configure the keyname to be `BITBUCKET, you need to have the following custom ssh keys configured in either the branch or global environment variables for wercker:
