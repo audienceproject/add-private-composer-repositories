@@ -21,10 +21,10 @@ steps:
         hostname: bitbucket.org
         fingerprint: 97:8c:1b:f2:6f:14:6b:5c:3b:ec:aa:46:46:74:7c:40
         type: rsa
-    - audienceproject/add-private-composer-repository@1.0.2:
+    - audienceproject/add-private-composer-repository@1.0.3:
         type: vcs
         url: git@bitbucket.org:AudienceReportTeam/random-repo-1.git
-    - audienceproject/add-private-composer-repository@1.0.2:
+    - audienceproject/add-private-composer-repository@1.0.3:
         type: vcs
         url: git@bitbucket.org:AudienceReportTeam/random-repo-2.git        
 ```
