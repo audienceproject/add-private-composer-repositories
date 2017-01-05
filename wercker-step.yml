@@ -1,6 +1,13 @@
 name: add-private-composer-repository
-version: 1.0.3
+version: 1.0.4
 description: A wercker step that configures Composer to load a private repository.
 keywords:
   - php
   - composer
+properties:
+  type:
+    type: string
+    required: true
+  url:
+    type: string
+    required: true
