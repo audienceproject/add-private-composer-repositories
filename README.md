@@ -2,7 +2,8 @@
 A wercker step that configures Composer to load a private repository.
 
 The step requires: 
- 1. Composer to be installed on your docker image and COMPOSER_HOME to be set.
+ 1. jq
+ 2. Composer to be installed on your docker image and COMPOSER_HOME to be set.
  2. An SSH key to be configured for reading Bitbucket/Github
  3. Bitbucket/Github to be added to the list of known hosts (to avoid interactive prompts during repository cloning)
  
@@ -20,10 +21,10 @@ steps:
         hostname: bitbucket.org
         fingerprint: 97:8c:1b:f2:6f:14:6b:5c:3b:ec:aa:46:46:74:7c:40
         type: rsa
-    - audienceproject/add-private-composer-repositories@1.0.1:
+    - audienceproject/add-private-composer-repository@1.0.2:
         type: vcs
         url: git@bitbucket.org:AudienceReportTeam/random-repo-1.git
-    - audienceproject/add-private-composer-repositories@1.0.1:
+    - audienceproject/add-private-composer-repository@1.0.2:
         type: vcs
         url: git@bitbucket.org:AudienceReportTeam/random-repo-2.git        
 ```
